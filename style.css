@@ -89,6 +89,22 @@ body {
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 800px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+  #form_1 {
+    box-sizing: border-box;
+  }
+  input {
+    max-width: 100%;
+  }
+  #message {
+    width: 100%;
+  }
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -852,7 +868,12 @@ p {
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .social {
+    justify-content: space-between;
+  }
 }
 
 h2 {
